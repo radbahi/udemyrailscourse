@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 #   how to send directly to a method. #methodname
   root 'pages#home'
 
+# root + /about leads to pages controller, about method
+  get 'about', to: 'pages#about'
+
 end
