@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TestApp6</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <!-- all the tags with percent signs in them are erb -->
+  </head>
+
+  <!-- yield is where the views get put -->
+  <body>
+    <%= yield %>
+  </body>
+</html>
